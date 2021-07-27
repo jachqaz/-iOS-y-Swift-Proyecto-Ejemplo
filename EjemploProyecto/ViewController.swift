@@ -15,6 +15,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         etiqueta.text = "Ya Cambie"
+        etiqueta.text = "Ya Cambie por segunda vez"
+        etiqueta.text = "Ya Cambie  por tercera vez"
+        etiqueta.text = "Ya Cambie por cuarta vez"
     }
 
     @IBAction func cambiarTexto(_ sender: Any) {

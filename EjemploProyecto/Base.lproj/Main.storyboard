@@ -16,24 +16,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIS-Fr-mwz">
-                                <rect key="frame" x="158" y="433" width="99" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hola Mundo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3X-29-ohk">
+                                <rect key="frame" x="98" y="438" width="218" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIS-Fr-mwz">
+                                <rect key="frame" x="157.5" y="614" width="99" height="30"/>
                                 <state key="normal" title="Cambiar Texto"/>
                                 <connections>
                                     <action selector="cambiarTexto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EBv-xm-gV1"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hola Mundo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3X-29-ohk">
-                                <rect key="frame" x="98" y="195" width="218" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YIS-Fr-mwz" secondAttribute="bottom" constant="218" id="Fyo-Ck-MBX"/>
+                            <constraint firstItem="YIS-Fr-mwz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QFh-tf-7zh"/>
+                            <constraint firstItem="N3X-29-ohk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="iEo-92-iGA"/>
+                            <constraint firstItem="N3X-29-ohk" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ksE-QO-2bj"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="etiqueta" destination="N3X-29-ohk" id="6fH-pF-6au"/>
