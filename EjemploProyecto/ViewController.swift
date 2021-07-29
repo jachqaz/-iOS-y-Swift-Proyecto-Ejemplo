@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var mySlider: UISlider!
     @IBOutlet weak var myStepper: UIStepper!
     @IBOutlet weak var mySwitch: UISwitch!
+    @IBOutlet weak var myProgressVIew: UIProgressView!
+    @IBOutlet weak var myActivityIndicator: UIActivityIndicatorView!
     //    Variables
     private let myPickerViewValues = ["Uno", "Dos", "Tres", "Cuatro", "Cinco"]
 
@@ -60,6 +62,12 @@ class ViewController: UIViewController {
 //        Switch
         mySwitch.onTintColor = .purple
         mySwitch.isOn = false
+
+//        Progress Indicator
+        myProgressVIew.progress = 0
+        myActivityIndicator.color = .orange
+        myActivityIndicator.startAnimating()
+        myActivityIndicator.hidesWhenStopped = true
     }
 
 //    @IBAction func cambiarTexto(_ sender: Any) {
@@ -69,8 +77,10 @@ class ViewController: UIViewController {
     @IBAction func mySwitchAction(_ sender: Any) {
         if (mySwitch.isOn) {
             myPickerView.isHidden = false
+            myActivityIndicator.stopAnimating()
         } else {
             myPickerView.isHidden = true
+            myActivityIndicator.startAnimating()
         }
     }
 
@@ -80,18 +90,25 @@ class ViewController: UIViewController {
     }
 
     @IBAction func mySliderAction(_ sender: Any) {
+        var progress: Float = 0
         switch mySlider.value {
         case 1..<2:
             mySegmentedControl.selectedSegmentIndex = 0
+            progress = 0.2
         case 2..<3:
             mySegmentedControl.selectedSegmentIndex = 1
+            progress = 0.4
         case 3..<4:
             mySegmentedControl.selectedSegmentIndex = 2
+            progress = 0.6
         case 4..<5:
             mySegmentedControl.selectedSegmentIndex = 3
+            progress = 0.8
         default:
             mySegmentedControl.selectedSegmentIndex = 4
+            progress = 1
         }
+        myProgressVIew.progress = progress
     }
 
     @IBAction func mySegmentedControlAction(_ sender: Any) {
