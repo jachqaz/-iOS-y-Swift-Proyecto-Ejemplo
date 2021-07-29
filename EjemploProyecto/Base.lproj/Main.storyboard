@@ -16,27 +16,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85R-O1-AFD">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85R-O1-AFD">
                                 <rect key="frame" x="20" y="84" width="374" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="myButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tUq-hP-fyo"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IWF-nA-sPf">
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IWF-nA-sPf">
                                 <rect key="frame" x="0.0" y="134" width="414" height="120"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="CrH-q4-B86"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </pickerView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="XfM-39-yST">
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="XfM-39-yST">
                                 <rect key="frame" x="20" y="274" width="374" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="myPageControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="x6H-6I-0Tu"/>
                                 </connections>
                             </pageControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3sp-F4-36U">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3sp-F4-36U">
                                 <rect key="frame" x="20" y="322" width="374" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
@@ -45,22 +46,27 @@
                                     <action selector="mySegmentedControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="agh-Qd-yqg"/>
                                 </connections>
                             </segmentedControl>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="UZR-QB-ij5">
+                                <rect key="frame" x="18" y="382" width="378" height="31"/>
+                                <connections>
+                                    <action selector="mySliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="u7N-nE-3L2"/>
+                                </connections>
+                            </slider>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="0PY-XC-Jdf">
+                                <rect key="frame" x="160" y="432" width="94" height="32"/>
+                                <connections>
+                                    <action selector="myStepperAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="KFL-KB-MTp"/>
+                                </connections>
+                            </stepper>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="3sp-F4-36U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5Jq-z1-WGN"/>
-                            <constraint firstItem="85R-O1-AFD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="GbX-Rz-x0k"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="85R-O1-AFD" secondAttribute="trailing" constant="20" id="Hsu-tF-Mjd"/>
-                            <constraint firstItem="85R-O1-AFD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MEP-LG-ZuA"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XfM-39-yST" secondAttribute="trailing" constant="20" id="Rr4-Hn-mvr"/>
-                            <constraint firstItem="3sp-F4-36U" firstAttribute="top" secondItem="XfM-39-yST" secondAttribute="bottom" constant="20" id="TJU-tl-DDT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3sp-F4-36U" secondAttribute="trailing" constant="20" id="WcW-KM-7bl"/>
-                            <constraint firstItem="XfM-39-yST" firstAttribute="top" secondItem="IWF-nA-sPf" secondAttribute="bottom" constant="20" id="d2r-dX-MUe"/>
-                            <constraint firstItem="IWF-nA-sPf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hTM-TL-iPh"/>
-                            <constraint firstItem="IWF-nA-sPf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iI0-W5-T4r"/>
-                            <constraint firstItem="XfM-39-yST" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nLR-OL-YbJ"/>
-                            <constraint firstItem="IWF-nA-sPf" firstAttribute="top" secondItem="85R-O1-AFD" secondAttribute="bottom" constant="20" id="u5o-MU-Eih"/>
+                            <constraint firstItem="0PY-XC-Jdf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="160" id="0TM-xF-WpT"/>
+                            <constraint firstItem="0PY-XC-Jdf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ldw-mk-wtH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0PY-XC-Jdf" secondAttribute="trailing" constant="160" id="igh-XA-oVW"/>
+                            <constraint firstItem="0PY-XC-Jdf" firstAttribute="top" secondItem="UZR-QB-ij5" secondAttribute="bottom" constant="20" id="uW3-IE-c5o"/>
+                            <constraint firstItem="0PY-XC-Jdf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vms-8e-xGi"/>
                         </constraints>
                     </view>
                     <connections>
@@ -68,6 +74,8 @@
                         <outlet property="myPageControl" destination="XfM-39-yST" id="r2s-0c-zVS"/>
                         <outlet property="myPickerView" destination="IWF-nA-sPf" id="awE-eq-Z1C"/>
                         <outlet property="mySegmentedControl" destination="3sp-F4-36U" id="nb3-6Z-d6O"/>
+                        <outlet property="mySlider" destination="UZR-QB-ij5" id="NXT-uC-mV8"/>
+                        <outlet property="myStepper" destination="0PY-XC-Jdf" id="mvN-L4-ccI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

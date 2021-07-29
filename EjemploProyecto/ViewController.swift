@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var myPickerView: UIPickerView!
     @IBOutlet weak var myPageControl: UIPageControl!
     @IBOutlet weak var mySegmentedControl: UISegmentedControl!
+    @IBOutlet weak var mySlider: UISlider!
+    @IBOutlet weak var myStepper: UIStepper!
     //    Variables
     private let myPickerViewValues = ["Uno", "Dos", "Tres", "Cuatro", "Cinco"]
 
@@ -43,11 +45,35 @@ class ViewController: UIViewController {
             mySegmentedControl.insertSegment(withTitle: value, at: index, animated: true)
         }
 
+//        Sliders
+        mySlider.minimumTrackTintColor = .red
+        mySlider.minimumValue = 1
+        mySlider.maximumValue = Float(myPickerViewValues.count)
+        mySlider.value = 1
+
     }
 
 //    @IBAction func cambiarTexto(_ sender: Any) {
 //        etiqueta.text = "Hola Mundo Cruel"
 //    }
+
+    @IBAction func myStepperAction(_ sender: Any) {
+    }
+
+    @IBAction func mySliderAction(_ sender: Any) {
+        switch mySlider.value {
+        case 1..<2:
+            mySegmentedControl.selectedSegmentIndex = 0
+        case 2..<3:
+            mySegmentedControl.selectedSegmentIndex = 1
+        case 3..<4:
+            mySegmentedControl.selectedSegmentIndex = 2
+        case 4..<5:
+            mySegmentedControl.selectedSegmentIndex = 3
+        default:
+            mySegmentedControl.selectedSegmentIndex = 4
+        }
+    }
 
     @IBAction func mySegmentedControlAction(_ sender: Any) {
         myPickerView.selectRow(mySegmentedControl.selectedSegmentIndex, inComponent: 0, animated: true)
