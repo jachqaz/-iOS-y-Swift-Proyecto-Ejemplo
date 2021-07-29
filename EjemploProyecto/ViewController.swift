@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var mySegmentedControl: UISegmentedControl!
     @IBOutlet weak var mySlider: UISlider!
     @IBOutlet weak var myStepper: UIStepper!
+    @IBOutlet weak var mySwitch: UISwitch!
     //    Variables
     private let myPickerViewValues = ["Uno", "Dos", "Tres", "Cuatro", "Cinco"]
 
@@ -35,6 +36,7 @@ class ViewController: UIViewController {
         myPickerView.backgroundColor = .lightGray
         myPickerView.dataSource = self
         myPickerView.delegate = self
+        myPickerView.isHidden = true
 //        PAgeCOntrol
         myPageControl.numberOfPages = myPickerViewValues.count
         myPageControl.currentPageIndicatorTintColor = .blue
@@ -51,13 +53,30 @@ class ViewController: UIViewController {
         mySlider.maximumValue = Float(myPickerViewValues.count)
         mySlider.value = 1
 
+//        Stepper
+        myStepper.minimumValue = 1
+        myStepper.maximumValue = Double(myPickerViewValues.count)
+
+//        Switch
+        mySwitch.onTintColor = .purple
+        mySwitch.isOn = false
     }
 
 //    @IBAction func cambiarTexto(_ sender: Any) {
 //        etiqueta.text = "Hola Mundo Cruel"
 //    }
 
+    @IBAction func mySwitchAction(_ sender: Any) {
+        if (mySwitch.isOn) {
+            myPickerView.isHidden = false
+        } else {
+            myPickerView.isHidden = true
+        }
+    }
+
     @IBAction func myStepperAction(_ sender: Any) {
+        let value = myStepper.value
+        mySlider.value = Float(value)
     }
 
     @IBAction func mySliderAction(_ sender: Any) {
