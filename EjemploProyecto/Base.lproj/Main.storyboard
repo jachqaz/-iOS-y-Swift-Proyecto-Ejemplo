@@ -35,24 +35,27 @@
                                     <action selector="myPageControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="x6H-6I-0Tu"/>
                                 </connections>
                             </pageControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dgG-eY-hnW">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3sp-F4-36U">
                                 <rect key="frame" x="20" y="322" width="374" height="32"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                 </segments>
+                                <connections>
+                                    <action selector="mySegmentedControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="agh-Qd-yqg"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dgG-eY-hnW" secondAttribute="trailing" constant="20" id="21r-Qf-UAv"/>
+                            <constraint firstItem="3sp-F4-36U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5Jq-z1-WGN"/>
                             <constraint firstItem="85R-O1-AFD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="GbX-Rz-x0k"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="85R-O1-AFD" secondAttribute="trailing" constant="20" id="Hsu-tF-Mjd"/>
-                            <constraint firstItem="dgG-eY-hnW" firstAttribute="top" secondItem="XfM-39-yST" secondAttribute="bottom" constant="20" id="Lb9-B6-5j5"/>
                             <constraint firstItem="85R-O1-AFD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MEP-LG-ZuA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XfM-39-yST" secondAttribute="trailing" constant="20" id="Rr4-Hn-mvr"/>
-                            <constraint firstItem="dgG-eY-hnW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RxT-zH-Tyw"/>
+                            <constraint firstItem="3sp-F4-36U" firstAttribute="top" secondItem="XfM-39-yST" secondAttribute="bottom" constant="20" id="TJU-tl-DDT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3sp-F4-36U" secondAttribute="trailing" constant="20" id="WcW-KM-7bl"/>
                             <constraint firstItem="XfM-39-yST" firstAttribute="top" secondItem="IWF-nA-sPf" secondAttribute="bottom" constant="20" id="d2r-dX-MUe"/>
                             <constraint firstItem="IWF-nA-sPf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hTM-TL-iPh"/>
                             <constraint firstItem="IWF-nA-sPf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iI0-W5-T4r"/>
@@ -64,7 +67,7 @@
                         <outlet property="myButton" destination="85R-O1-AFD" id="g8m-ZC-pIP"/>
                         <outlet property="myPageControl" destination="XfM-39-yST" id="r2s-0c-zVS"/>
                         <outlet property="myPickerView" destination="IWF-nA-sPf" id="awE-eq-Z1C"/>
-                        <outlet property="segmentedControl" destination="dgG-eY-hnW" id="OTl-EG-ifY"/>
+                        <outlet property="mySegmentedControl" destination="3sp-F4-36U" id="nb3-6Z-d6O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
