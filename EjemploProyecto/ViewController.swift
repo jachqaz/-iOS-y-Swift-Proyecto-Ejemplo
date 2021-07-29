@@ -14,7 +14,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var myButton: UIButton!
     @IBOutlet weak var myPickerView: UIPickerView!
 
-//    Variables
+    @IBOutlet weak var myPageControl: UIPageControl!
+    @IBOutlet weak var mySegmentedControl: UISegmentedControl!
+    //    Variables
     private let myPickerViewValues = ["Uno", "Dos", "Tres", "Cuatro", "Cinco"]
 
     override func viewDidLoad() {
@@ -32,6 +34,10 @@ class ViewController: UIViewController {
         myPickerView.backgroundColor = .lightGray
         myPickerView.dataSource = self
         myPickerView.delegate = self
+//        PAgeCOntrol
+        myPageControl.numberOfPages = myPickerViewValues.count
+        myPageControl.currentPageIndicatorTintColor = .blue
+        myPageControl.pageIndicatorTintColor = .lightGray
     }
 
 //    @IBAction func cambiarTexto(_ sender: Any) {
@@ -44,6 +50,13 @@ class ViewController: UIViewController {
         } else {
             myButton.backgroundColor = .blue
         }
+    }
+
+    @IBAction func myPageControlAction(_ sender: Any) {
+        myPickerView.selectRow(myPageControl.currentPage, inComponent: 0, animated: true)
+        let myString = myPickerViewValues[myPageControl.currentPage]
+        myButton.setTitle(myString, for: .normal)
+
     }
 }
 
@@ -63,6 +76,8 @@ extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     public func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let myString = myPickerViewValues[row]
         myButton.setTitle(myString, for: .normal)
+
+        myPageControl.currentPage = row
     }
 }
 
