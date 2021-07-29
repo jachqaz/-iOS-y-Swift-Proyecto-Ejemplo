@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var myActivityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var myStepperLabel: UILabel!
     @IBOutlet weak var mySwtichLabel: UILabel!
+    @IBOutlet weak var myTextField: UITextField!
     //    Variables
     private let myPickerViewValues = ["Uno", "Dos", "Tres", "Cuatro", "Cinco"]
 
@@ -76,6 +77,11 @@ class ViewController: UIViewController {
         myStepperLabel.font = UIFont.boldSystemFont(ofSize: 36)
         myStepperLabel.text = "1"
         mySwtichLabel.text = "Esta Apagado"
+
+//        TextField
+        myTextField.textColor = .brown
+        myTextField.placeholder = "Escribe algo"
+        myTextField.delegate = self
     }
 
 //    @IBAction func cambiarTexto(_ sender: Any) {
@@ -167,6 +173,16 @@ extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
 
         mySegmentedControl.selectedSegmentIndex = row
 
+    }
+}
+
+extension ViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+    }
+
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        myButton.setTitle(myTextField.text, for: .normal)
     }
 }
 
