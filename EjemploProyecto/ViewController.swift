@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var myStepperLabel: UILabel!
     @IBOutlet weak var mySwtichLabel: UILabel!
     @IBOutlet weak var myTextField: UITextField!
+    @IBOutlet weak var myTextView: UITextView!
     //    Variables
     private let myPickerViewValues = ["Uno", "Dos", "Tres", "Cuatro", "Cinco"]
 
@@ -82,6 +83,11 @@ class ViewController: UIViewController {
         myTextField.textColor = .brown
         myTextField.placeholder = "Escribe algo"
         myTextField.delegate = self
+
+//        TextView
+        myTextView.textColor = .brown
+        myTextView.isEditable = false
+        myTextView.delegate = self
     }
 
 //    @IBAction func cambiarTexto(_ sender: Any) {
@@ -148,6 +154,7 @@ class ViewController: UIViewController {
         } else {
             myButton.backgroundColor = .blue
         }
+        myTextView.resignFirstResponder()
     }
 
 }
@@ -186,3 +193,12 @@ extension ViewController: UITextFieldDelegate {
     }
 }
 
+extension ViewController: UITextViewDelegate {
+    public func textViewDidBeginEditing(_ textView: UITextView) {
+        myTextField.isHidden = true
+    }
+
+    public func textViewDidEndEditing(_ textView: UITextView) {
+        myTextField.isHidden = false
+    }
+}
