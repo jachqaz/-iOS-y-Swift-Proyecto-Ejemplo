@@ -38,19 +38,26 @@
                                 <rect key="frame" x="0.0" y="252" width="414" height="2"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="myImage" translatesAutoresizingMaskIntoConstraints="NO" id="D2m-oa-Ot2">
+                                <rect key="frame" x="0.0" y="252" width="414" height="201"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="D2m-oa-Ot2" firstAttribute="top" secondItem="rvj-rq-K7J" secondAttribute="bottom" id="5uU-gO-lB0"/>
+                            <constraint firstItem="D2m-oa-Ot2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="780-xc-XMM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wCI-ch-reV" secondAttribute="trailing" id="Es9-qN-Ecr"/>
                             <constraint firstItem="wCI-ch-reV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Hfp-sS-5YH"/>
                             <constraint firstItem="wCI-ch-reV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VvL-P7-HWM"/>
                             <constraint firstItem="rvj-rq-K7J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="owb-4u-cJT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D2m-oa-Ot2" secondAttribute="trailing" id="tXy-HA-d9F"/>
                             <constraint firstItem="rvj-rq-K7J" firstAttribute="top" secondItem="wCI-ch-reV" secondAttribute="bottom" constant="2" id="x7N-7L-foz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rvj-rq-K7J" secondAttribute="trailing" id="zZZ-zC-dzB"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="myImage" destination="D2m-oa-Ot2" id="uEB-dy-POB"/>
                         <outlet property="myView" destination="wCI-ch-reV" id="bHL-5P-D7d"/>
                     </connections>
                 </viewController>
@@ -60,6 +67,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="myImage" width="750" height="422"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
