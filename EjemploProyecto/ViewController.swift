@@ -22,6 +22,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        title = "My View Controller"
         // Do any additional setup after loading the view.
         myWebView.load(URLRequest(url: URL(string: "https://google.com")!))
         myMap.centerCoordinate = CLLocationCoordinate2DMake(42.6074875, -8.3132621)
