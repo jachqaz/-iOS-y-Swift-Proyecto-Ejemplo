@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="58C-I4-xEJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1110"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2230"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9du-mb-Ngs">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
@@ -30,10 +30,27 @@
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="210" translatesAutoresizingMaskIntoConstraints="NO" id="oAZ-Nf-dd4">
-                                                <rect key="frame" x="0.0" y="100" width="414" height="1010"/>
+                                                <rect key="frame" x="0.0" y="100" width="414" height="2130"/>
                                                 <subviews>
+                                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="a6s-Nq-hFF">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="300" id="D2A-Y1-efU"/>
+                                                        </constraints>
+                                                    </mapView>
+                                                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bTj-jA-ZCy">
+                                                        <rect key="frame" x="0.0" y="510" width="414" height="400"/>
+                                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="400" id="hv8-0w-ry8"/>
+                                                        </constraints>
+                                                        <wkWebViewConfiguration key="configuration">
+                                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                            <wkPreferences key="preferences"/>
+                                                        </wkWebViewConfiguration>
+                                                    </wkWebView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wCI-ch-reV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                                                        <rect key="frame" x="0.0" y="1120" width="414" height="400"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUe-3e-Nou">
                                                                 <rect key="frame" x="8" y="0.0" width="42" height="21"/>
@@ -58,21 +75,12 @@
                                                         </constraints>
                                                     </view>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myImage" translatesAutoresizingMaskIntoConstraints="NO" id="D2m-oa-Ot2">
-                                                        <rect key="frame" x="0.0" y="610" width="414" height="400"/>
+                                                        <rect key="frame" x="0.0" y="1730" width="414" height="400"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="400" id="5Us-mU-sdm"/>
                                                         </constraints>
                                                     </imageView>
                                                 </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="D2m-oa-Ot2" secondAttribute="trailing" id="Fa4-Lf-plg"/>
-                                                    <constraint firstItem="D2m-oa-Ot2" firstAttribute="top" secondItem="wCI-ch-reV" secondAttribute="bottom" id="MnV-Tk-EqY"/>
-                                                    <constraint firstAttribute="trailing" secondItem="D2m-oa-Ot2" secondAttribute="trailing" id="OR0-Rw-5cF"/>
-                                                    <constraint firstItem="D2m-oa-Ot2" firstAttribute="leading" secondItem="oAZ-Nf-dd4" secondAttribute="leading" id="XLr-zQ-10m"/>
-                                                    <constraint firstItem="wCI-ch-reV" firstAttribute="top" secondItem="oAZ-Nf-dd4" secondAttribute="top" id="dHh-li-bks"/>
-                                                    <constraint firstItem="D2m-oa-Ot2" firstAttribute="leading" secondItem="oAZ-Nf-dd4" secondAttribute="leading" id="ntH-tM-9gx"/>
-                                                    <constraint firstAttribute="trailing" secondItem="wCI-ch-reV" secondAttribute="trailing" id="sO0-54-Yiq"/>
-                                                </constraints>
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -108,7 +116,9 @@
                         <outlet property="myButton" destination="XzL-Ea-Wa7" id="av2-8A-rqa"/>
                         <outlet property="myFakeView" destination="9du-mb-Ngs" id="TYJ-FB-tkG"/>
                         <outlet property="myImage" destination="D2m-oa-Ot2" id="uEB-dy-POB"/>
+                        <outlet property="myMap" destination="a6s-Nq-hFF" id="dkW-U5-DDS"/>
                         <outlet property="myView" destination="wCI-ch-reV" id="bHL-5P-D7d"/>
+                        <outlet property="myWebView" destination="bTj-jA-ZCy" id="fzf-q0-sDv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
