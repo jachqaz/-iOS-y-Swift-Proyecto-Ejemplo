@@ -162,14 +162,37 @@
         <!--Item 1-->
         <scene sceneID="YSV-Zi-Miw">
             <objects>
-                <viewController storyboardIdentifier="vcGreen" id="nNz-RK-xjY" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="vcGreen" id="nNz-RK-xjY" customClass="GreenViewController" customModule="EjemploProyecto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uQJ-Fp-uuj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="in0-Yw-NYX">
+                                <rect key="frame" x="0.0" y="44" width="414" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buscando" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kek-qt-fiL">
+                                <rect key="frame" x="169" y="437.5" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="2rB-dh-J2g"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="kek-qt-fiL" firstAttribute="centerY" secondItem="uQJ-Fp-uuj" secondAttribute="centerY" id="CLy-xi-Dlz"/>
+                            <constraint firstItem="in0-Yw-NYX" firstAttribute="top" secondItem="2rB-dh-J2g" secondAttribute="top" id="Gho-zU-RiY"/>
+                            <constraint firstItem="kek-qt-fiL" firstAttribute="centerX" secondItem="uQJ-Fp-uuj" secondAttribute="centerX" id="bFw-GA-1FO"/>
+                            <constraint firstItem="in0-Yw-NYX" firstAttribute="trailing" secondItem="2rB-dh-J2g" secondAttribute="trailing" id="pjy-iQ-ocs"/>
+                            <constraint firstItem="in0-Yw-NYX" firstAttribute="leading" secondItem="2rB-dh-J2g" secondAttribute="leading" id="rfE-oi-H72"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="Vj8-06-BJ4"/>
+                    <connections>
+                        <outlet property="myLabel" destination="kek-qt-fiL" id="Ttu-C0-AbE"/>
+                        <outlet property="mySearchBar" destination="in0-Yw-NYX" id="RLu-I1-oRk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wQu-sc-LCP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

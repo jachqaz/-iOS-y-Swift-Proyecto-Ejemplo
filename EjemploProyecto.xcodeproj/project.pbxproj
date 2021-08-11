@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A708485226C36765006FA55F /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A708485126C36765006FA55F /* PageViewController.swift */; };
+		A708485426C36A7C006FA55F /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A708485326C36A7C006FA55F /* GreenViewController.swift */; };
 		A721061C26A8D7A00030BA01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A721061B26A8D7A00030BA01 /* AppDelegate.swift */; };
 		A721061E26A8D7A00030BA01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A721061D26A8D7A00030BA01 /* SceneDelegate.swift */; };
 		A721062026A8D7A00030BA01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A721061F26A8D7A00030BA01 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		A708485126C36765006FA55F /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		A708485326C36A7C006FA55F /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
 		A721061826A8D7A00030BA01 /* EjemploProyecto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EjemploProyecto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A721061B26A8D7A00030BA01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A721061D26A8D7A00030BA01 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				A721062626A8D7A10030BA01 /* LaunchScreen.storyboard */,
 				A721062926A8D7A10030BA01 /* Info.plist */,
 				A708485126C36765006FA55F /* PageViewController.swift */,
+				A708485326C36A7C006FA55F /* GreenViewController.swift */,
 			);
 			path = EjemploProyecto;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				A721061C26A8D7A00030BA01 /* AppDelegate.swift in Sources */,
 				A721061E26A8D7A00030BA01 /* SceneDelegate.swift in Sources */,
 				A708485226C36765006FA55F /* PageViewController.swift in Sources */,
+				A708485426C36A7C006FA55F /* GreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
