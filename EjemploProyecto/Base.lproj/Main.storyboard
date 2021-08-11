@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EjemploProyecto" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g2o-OD-jDx">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="58C-I4-xEJ">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="2230"/>
@@ -112,6 +112,7 @@
                             <constraint firstItem="g2o-OD-jDx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="cqh-6r-uf0"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="TP2-yQ-HKz"/>
                     <navigationItem key="navigationItem" id="WDn-f3-lxt"/>
                     <connections>
                         <outlet property="myButton" destination="XzL-Ea-Wa7" id="av2-8A-rqa"/>
@@ -135,12 +136,64 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="I8u-dg-a3X"/>
+                        <segue destination="lvZ-jM-Z6L" kind="relationship" relationship="rootViewController" id="xHy-0Z-T5c"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y6c-bd-VEs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-761" y="110"/>
+            <point key="canvasLocation" x="-2029" y="1229"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="c6a-VR-vAf">
+            <objects>
+                <viewController id="GsT-N7-Upn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jVP-2u-dRp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="MOx-39-U4p"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="Ug7-Na-ps6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0rW-Mg-M3w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57" y="1519"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="YSV-Zi-Miw">
+            <objects>
+                <viewController id="nNz-RK-xjY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uQJ-Fp-uuj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="2rB-dh-J2g"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="Vj8-06-BJ4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wQu-sc-LCP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57" y="863"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="8E2-nd-90x">
+            <objects>
+                <tabBarController id="lvZ-jM-Z6L" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Ryo-7Y-kM4"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CmT-GY-7s8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="nNz-RK-xjY" kind="relationship" relationship="viewControllers" id="nZD-mA-xxq"/>
+                        <segue destination="GsT-N7-Upn" kind="relationship" relationship="viewControllers" id="pLy-NK-iXD"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="6cB-Mf-Cyb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pFd-Cg-BPZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-836" y="1214"/>
         </scene>
     </scenes>
     <resources>
@@ -150,6 +203,9 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
