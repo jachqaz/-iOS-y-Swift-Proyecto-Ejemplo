@@ -8,40 +8,29 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Menu-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EjemploProyecto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZZ-jZ-owj">
-                                <rect key="frame" x="120" y="405" width="174" height="86"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="62"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                    <color key="titleShadowColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="PQz-SH-LJ2" kind="show" id="Ctb-4a-udu"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
-                        <constraints>
-                            <constraint firstItem="qZZ-jZ-owj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="48c-s9-ntQ"/>
-                            <constraint firstItem="qZZ-jZ-owj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Dkf-7D-Py9"/>
-                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="03N-7D-T19"/>
+                    <navigationItem key="navigationItem" title="Menu" id="03N-7D-T19">
+                        <barButtonItem key="rightBarButtonItem" title="Negro" id="vzJ-88-aQg">
+                            <connections>
+                                <segue destination="PQz-SH-LJ2" kind="show" id="Sj3-EK-5iL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1229" y="619"/>
         </scene>
-        <!--View Controller-->
+        <!--Negro-->
         <scene sceneID="a5j-b1-HoA">
             <objects>
                 <viewController id="PQz-SH-LJ2" sceneMemberID="viewController">
@@ -52,11 +41,64 @@
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <color key="tintColor" systemColor="labelColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="242-jn-aWt"/>
+                    <navigationItem key="navigationItem" title="Negro" id="242-jn-aWt">
+                        <barButtonItem key="rightBarButtonItem" title="Rosa" id="AD7-Ms-2Sl">
+                            <connections>
+                                <segue destination="MM0-z3-xgS" kind="show" id="xUz-kh-Tht"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o8z-TG-u4n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2168" y="619"/>
+            <point key="canvasLocation" x="2166.666666666667" y="618.75"/>
+        </scene>
+        <!--Rosa-->
+        <scene sceneID="VZJ-yP-Vor">
+            <objects>
+                <viewController id="MM0-z3-xgS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F8M-Ab-N5j">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="1X0-zD-c7c"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Rosa" id="zyb-qu-LbQ">
+                        <barButtonItem key="rightBarButtonItem" title="Azul" id="MBC-BK-Wom">
+                            <connections>
+                                <segue destination="Qii-LT-txq" kind="show" id="N4R-Yb-US8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qfh-Ld-S8Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3109" y="619"/>
+        </scene>
+        <!--Azul-->
+        <scene sceneID="XjG-0l-T72">
+            <objects>
+                <viewController id="Qii-LT-txq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7k5-0s-Bfd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFa-Oa-ATE">
+                                <rect key="frame" x="133" y="410" width="149" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DLv-is-d50"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Azul" id="vYv-IH-SPR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cxd-PU-DqT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4096" y="619"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ybS-Ow-izx">
@@ -81,6 +123,9 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
