@@ -9,9 +9,13 @@ import UIKit
 
 class ViewControllerNegro: UIViewController {
 
+    public var titulo: String?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if let tituloFinal = titulo {
+            self.title = titulo
+        }
         // Do any additional setup after loading the view.
     }
 
