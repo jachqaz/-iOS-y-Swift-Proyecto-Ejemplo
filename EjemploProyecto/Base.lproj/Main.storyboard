@@ -24,7 +24,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="PQz-SH-LJ2" kind="show" id="Im9-TR-ymf"/>
+                                    <action selector="botonNegro:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A30-Yb-HDp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhT-5Y-Ang">
@@ -35,7 +35,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="MM0-z3-xgS" kind="show" id="Hau-NI-rfA"/>
+                                    <action selector="botonRosa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oqh-A5-jZt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMf-XP-nmV">
@@ -46,7 +46,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Qii-LT-txq" kind="presentation" id="Ahq-4Z-cKN"/>
+                                    <action selector="botonAzul:" destination="BYZ-38-t0r" eventType="touchUpInside" id="joU-qr-eoO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -56,6 +56,11 @@
                     <navigationItem key="navigationItem" title="Menu" id="03N-7D-T19">
                         <barButtonItem key="rightBarButtonItem" title="Negro" id="vzJ-88-aQg"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="PQz-SH-LJ2" kind="show" identifier="VCNegro" id="rhc-pa-ZDW"/>
+                        <segue destination="MM0-z3-xgS" kind="show" identifier="VCRosa" id="D52-T7-zxS"/>
+                        <segue destination="Qii-LT-txq" kind="show" identifier="VCAzul" id="H98-Yw-t7u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -64,7 +69,7 @@
         <!--Negro-->
         <scene sceneID="a5j-b1-HoA">
             <objects>
-                <viewController id="PQz-SH-LJ2" sceneMemberID="viewController">
+                <viewController id="PQz-SH-LJ2" customClass="ViewControllerNegro" customModule="EjemploProyecto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L8x-9i-Ita">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,7 +88,7 @@
         <!--Rosa-->
         <scene sceneID="VZJ-yP-Vor">
             <objects>
-                <viewController id="MM0-z3-xgS" sceneMemberID="viewController">
+                <viewController id="MM0-z3-xgS" customClass="ViewControllerRosa" customModule="EjemploProyecto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F8M-Ab-N5j">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -101,9 +106,9 @@
         <!--Azul-->
         <scene sceneID="XjG-0l-T72">
             <objects>
-                <viewController id="Qii-LT-txq" sceneMemberID="viewController">
+                <viewController id="Qii-LT-txq" customClass="ViewControllerAzul" customModule="EjemploProyecto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7k5-0s-Bfd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="DLv-is-d50"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
