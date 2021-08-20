@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     private let myCountries = ["España", "Mexico", "Peru", "Colombia", "Argentina", "EEUU"]
+    private let myCellWidth = UIScreen.main.bounds.width / 2
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,5 +40,11 @@ extension ViewController: UICollectionViewDataSource {
 extension ViewController: UICollectionViewDelegate {
     public func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
         print("\(indexPath.section) \(indexPath.row) \(myCountries[indexPath.row])")
+    }
+}
+
+extension ViewController: UICollectionViewDelegateFlowLayout {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: myCellWidth, height: myCellWidth)
     }
 }
