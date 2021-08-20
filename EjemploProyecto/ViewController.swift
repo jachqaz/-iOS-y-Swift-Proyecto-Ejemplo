@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         collectionView.backgroundColor = .red
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: "MyCustomCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "mycell")
-//        collectionView.delegate = self
+        collectionView.delegate = self
     }
 }
 
@@ -36,3 +36,8 @@ extension ViewController: UICollectionViewDataSource {
     }
 }
 
+extension ViewController: UICollectionViewDelegate {
+    public func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        print("\(indexPath.section) \(indexPath.row) \(myCountries[indexPath.row])")
+    }
+}
