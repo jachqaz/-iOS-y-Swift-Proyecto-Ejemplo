@@ -13,6 +13,8 @@
 		A721062326A8D7A00030BA01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A721062126A8D7A00030BA01 /* Main.storyboard */; };
 		A721062526A8D7A10030BA01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A721062426A8D7A10030BA01 /* Assets.xcassets */; };
 		A721062826A8D7A10030BA01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A721062626A8D7A10030BA01 /* LaunchScreen.storyboard */; };
+		A75687FF26CF754900CD4495 /* MyCustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75687FD26CF754900CD4495 /* MyCustomCollectionViewCell.swift */; };
+		A756880026CF754900CD4495 /* MyCustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A75687FE26CF754900CD4495 /* MyCustomCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A721062426A8D7A10030BA01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A721062726A8D7A10030BA01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A721062926A8D7A10030BA01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A75687FD26CF754900CD4495 /* MyCustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		A75687FE26CF754900CD4495 /* MyCustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				A721062426A8D7A10030BA01 /* Assets.xcassets */,
 				A721062626A8D7A10030BA01 /* LaunchScreen.storyboard */,
 				A721062926A8D7A10030BA01 /* Info.plist */,
+				A75687FD26CF754900CD4495 /* MyCustomCollectionViewCell.swift */,
+				A75687FE26CF754900CD4495 /* MyCustomCollectionViewCell.xib */,
 			);
 			path = EjemploProyecto;
 			sourceTree = "<group>";
@@ -127,6 +133,7 @@
 				A721062826A8D7A10030BA01 /* LaunchScreen.storyboard in Resources */,
 				A721062526A8D7A10030BA01 /* Assets.xcassets in Resources */,
 				A721062326A8D7A00030BA01 /* Main.storyboard in Resources */,
+				A756880026CF754900CD4495 /* MyCustomCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +146,7 @@
 			files = (
 				A721062026A8D7A00030BA01 /* ViewController.swift in Sources */,
 				A721061C26A8D7A00030BA01 /* AppDelegate.swift in Sources */,
+				A75687FF26CF754900CD4495 /* MyCustomCollectionViewCell.swift in Sources */,
 				A721061E26A8D7A00030BA01 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
