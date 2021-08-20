@@ -27,7 +27,10 @@ extension ViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        myCountries.count
+        if section == 0 {
+            return 2
+        }
+        return myCountries.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -45,6 +48,10 @@ extension ViewController: UICollectionViewDelegate {
 
 extension ViewController: UICollectionViewDelegateFlowLayout {
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: myCellWidth, height: myCellWidth)
+        if indexPath.section == 0 {
+            return CGSize(width: myCellWidth, height: myCellWidth)
+
+        }
+        return CGSize(width: myCellWidth * 2, height: myCellWidth * 2)
     }
 }
