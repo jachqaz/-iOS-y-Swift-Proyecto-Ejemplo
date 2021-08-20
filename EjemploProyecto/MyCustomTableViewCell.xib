@@ -17,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="218"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKd-gX-7wc">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKd-gX-7wc">
                         <rect key="frame" x="16" y="16" width="72" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -29,14 +29,15 @@
                             <constraint firstAttribute="width" constant="200" id="PDh-UF-R6R"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RW2-wf-AJf">
-                        <rect key="frame" x="16" y="55" width="56" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RW2-wf-AJf">
+                        <rect key="frame" x="32" y="55" width="56" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="bottom" secondItem="RW2-wf-AJf" secondAttribute="bottom" constant="16" id="0rT-PC-W5m"/>
                     <constraint firstItem="RW2-wf-AJf" firstAttribute="top" secondItem="kKd-gX-7wc" secondAttribute="bottom" constant="16" id="EeB-UT-6R2"/>
                     <constraint firstAttribute="trailing" secondItem="AAp-y5-C5s" secondAttribute="trailing" constant="16" id="LT8-4n-yZA"/>
                     <constraint firstItem="AAp-y5-C5s" firstAttribute="leading" secondItem="RW2-wf-AJf" secondAttribute="trailing" constant="16" id="UYT-tB-Lgj"/>

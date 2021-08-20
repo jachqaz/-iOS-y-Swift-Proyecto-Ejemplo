@@ -19,6 +19,8 @@ class MyCustomTableViewCell: UITableViewCell {
         myFirstLabel.font = UIFont.boldSystemFont(ofSize: 20)
         myFirstLabel.textColor = .blue
 
+        mySecondLabel.numberOfLines = 0
+
         backgroundColor = .gray
     }
 

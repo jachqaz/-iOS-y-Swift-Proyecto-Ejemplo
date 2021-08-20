@@ -53,7 +53,7 @@ extension ViewController: UITableViewDataSource {
         if indexPath.section == 0 {
             return 50
         }
-        return 150
+        return UITableView.automaticDimension
     }
 
     public func numberOfSections(in tableView: UITableView) -> Int {
