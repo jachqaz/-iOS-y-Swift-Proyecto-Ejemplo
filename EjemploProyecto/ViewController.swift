@@ -17,6 +17,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         tableView.dataSource = self
+        tableView.delegate = self
+        tableView.tableFooterView = UIView()
     }
 
 
@@ -33,10 +35,19 @@ extension ViewController: UITableViewDataSource {
             cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
             cell?.backgroundColor = .gray
             cell?.textLabel?.font = UIFont.systemFont(ofSize: 20)
+            cell?.accessoryType = .disclosureIndicator
         }
         cell!.textLabel?.text = myCountries[indexPath.row]
         return cell!
     }
 
+//    public func numberOfSections(in tableView: UITableView) -> Int {
+//        3
+//    }
+}
 
+extension ViewController: UITableViewDelegate {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(myCountries[indexPath.row])
+    }
 }
