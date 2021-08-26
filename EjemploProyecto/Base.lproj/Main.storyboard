@@ -28,12 +28,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Crear Automovil Sencillo"/>
+                                <connections>
+                                    <action selector="crearAutomovil:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6wL-aT-vUc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndf-Uf-1Y7">
                                 <rect key="frame" x="123" y="300" width="169" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Crear Automovil Mazda"/>
+                                <connections>
+                                    <action selector="crearAutomovilMazda:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aMh-4J-2qX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -41,17 +47,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="HUe-vy-eeN"/>
                     <connections>
-                        <segue destination="X5c-ux-py7" kind="show" id="REO-xy-uaZ"/>
+                        <segue destination="X5c-ux-py7" kind="show" identifier="segueSegundaPantalla" id="REO-xy-uaZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="116.51785714285714"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Segunda Pantalla-->
         <scene sceneID="wQh-zB-ejc">
             <objects>
-                <viewController id="X5c-ux-py7" sceneMemberID="viewController">
+                <viewController id="X5c-ux-py7" customClass="ViewControllerSegundaPantalla" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VQA-cK-Zl1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,16 +70,26 @@
                                 <rect key="frame" x="174" y="379" width="66" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Encender"/>
+                                <connections>
+                                    <action selector="encender:" destination="X5c-ux-py7" eventType="touchUpInside" id="8RR-rd-mQB"/>
+                                    <action selector="mostrarInformacion:" destination="X5c-ux-py7" eventType="touchUpInside" id="T2p-Gm-r63"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5VJ-h9-pOm">
                                 <rect key="frame" x="182" y="497" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Apagar"/>
+                                <connections>
+                                    <action selector="apagar:" destination="X5c-ux-py7" eventType="touchUpInside" id="cJc-uP-FwH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqS-Ch-AMw">
-                                <rect key="frame" x="179" y="617" width="57" height="30"/>
+                                <rect key="frame" x="179" y="616" width="57" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Acelerar"/>
+                                <connections>
+                                    <action selector="acelerar:" destination="X5c-ux-py7" eventType="touchUpInside" id="G4R-vq-I48"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Informacion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDp-6J-F1L">
                                 <rect key="frame" x="20" y="717" width="374" height="145"/>
