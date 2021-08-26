@@ -14,6 +14,7 @@
 		A721062326A8D7A00030BA01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A721062126A8D7A00030BA01 /* Main.storyboard */; };
 		A721062526A8D7A10030BA01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A721062426A8D7A10030BA01 /* Assets.xcassets */; };
 		A721062826A8D7A10030BA01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A721062626A8D7A10030BA01 /* LaunchScreen.storyboard */; };
+		A7B2754626D74FB400DBBCE2 /* AutomovilElectrico.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B2754526D74FB400DBBCE2 /* AutomovilElectrico.swift */; };
 		BAA5FDFDDAFF1935E9F2CC02 /* Automovil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA5F4143DCCF08F4A684893 /* Automovil.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		A721062426A8D7A10030BA01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A721062726A8D7A10030BA01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A721062926A8D7A10030BA01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7B2754526D74FB400DBBCE2 /* AutomovilElectrico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomovilElectrico.swift; sourceTree = "<group>"; };
 		BAA5F4143DCCF08F4A684893 /* Automovil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Automovil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +71,7 @@
 				A721062926A8D7A10030BA01 /* Info.plist */,
 				BAA5F4143DCCF08F4A684893 /* Automovil.swift */,
 				A71CCD7A26D6EDE900350A98 /* ViewControllerSegundaPantalla.swift */,
+				A7B2754526D74FB400DBBCE2 /* AutomovilElectrico.swift */,
 			);
 			path = EjemploProyecto;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 				A721062026A8D7A00030BA01 /* ViewController.swift in Sources */,
 				A71CCD7B26D6EDE900350A98 /* ViewControllerSegundaPantalla.swift in Sources */,
 				A721061C26A8D7A00030BA01 /* AppDelegate.swift in Sources */,
+				A7B2754626D74FB400DBBCE2 /* AutomovilElectrico.swift in Sources */,
 				A721061E26A8D7A00030BA01 /* SceneDelegate.swift in Sources */,
 				BAA5FDFDDAFF1935E9F2CC02 /* Automovil.swift in Sources */,
 			);

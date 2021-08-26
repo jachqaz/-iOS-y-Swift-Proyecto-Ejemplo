@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        var automovil = automovil()
+        var automovil = Automovil()
         print("El automovil esta encendido \(automovil.encender())")
     }
 

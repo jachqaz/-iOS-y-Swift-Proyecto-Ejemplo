@@ -33,10 +33,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndf-Uf-1Y7">
-                                <rect key="frame" x="123" y="300" width="169" height="32"/>
+                                <rect key="frame" x="90" y="300" width="236" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="Crear Automovil Mazda"/>
+                                <state key="normal" title="Crear Automovil Mazda Electrico"/>
                                 <connections>
                                     <action selector="crearAutomovilMazda:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aMh-4J-2qX"/>
                                 </connections>
@@ -57,22 +57,17 @@
         <!--View Controller Segunda Pantalla-->
         <scene sceneID="wQh-zB-ejc">
             <objects>
-                <viewController id="X5c-ux-py7" customClass="ViewControllerSegundaPantalla" sceneMemberID="viewController">
+                <viewController id="X5c-ux-py7" customClass="ViewControllerSegundaPantalla" customModule="EjemploProyecto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VQA-cK-Zl1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2FR-uH-FaC">
-                                <rect key="frame" x="87" y="154" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mtj-KD-PMQ">
                                 <rect key="frame" x="174" y="379" width="66" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Encender"/>
                                 <connections>
                                     <action selector="encender:" destination="X5c-ux-py7" eventType="touchUpInside" id="8RR-rd-mQB"/>
-                                    <action selector="mostrarInformacion:" destination="X5c-ux-py7" eventType="touchUpInside" id="T2p-Gm-r63"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5VJ-h9-pOm">
@@ -91,23 +86,34 @@
                                     <action selector="acelerar:" destination="X5c-ux-py7" eventType="touchUpInside" id="G4R-vq-I48"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Informacion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDp-6J-F1L">
-                                <rect key="frame" x="20" y="717" width="374" height="145"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lp-ou-D85">
+                                <rect key="frame" x="138" y="93" width="139" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Mostrar Informacion"/>
+                                <connections>
+                                    <action selector="mostrarInformacion:" destination="X5c-ux-py7" eventType="touchUpInside" id="b7I-8G-Jtp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Informacion" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ugs-Qj-Err">
+                                <rect key="frame" x="20" y="689" width="374" height="173"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lp-ou-D85">
-                                <rect key="frame" x="138" y="93" width="139" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JiS-CI-4j3">
+                                <rect key="frame" x="87" y="177" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Mostrar Informacion"/>
-                            </button>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="g22-VL-Tl2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="ONr-hQ-gSa"/>
+                    <connections>
+                        <outlet property="image" destination="JiS-CI-4j3" id="Ttu-rO-RZC"/>
+                        <outlet property="label" destination="Ugs-Qj-Err" id="n3I-Qh-7Wg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xnr-81-6Yv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
