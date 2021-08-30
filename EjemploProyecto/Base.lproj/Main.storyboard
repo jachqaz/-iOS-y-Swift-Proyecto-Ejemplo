@@ -17,14 +17,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QD8-GJ-Bg0">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QD8-GJ-Bg0">
                                 <rect key="frame" x="16" y="104" width="382" height="742"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raM-yJ-JtA">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="742"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="371"/>
                                         <state key="normal" title="Contrains de posicion"/>
                                         <connections>
                                             <segue destination="IYv-yi-P5n" kind="show" id="Q0L-Ea-aSV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpL-Xz-dZn">
+                                        <rect key="frame" x="0.0" y="371" width="382" height="371"/>
+                                        <state key="normal" title="Contrains de altura y anchura"/>
+                                        <connections>
+                                            <segue destination="EHL-aC-YZB" kind="show" id="ask-I8-aIL"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -92,6 +99,36 @@
             </objects>
             <point key="canvasLocation" x="682.60869565217399" y="116.51785714285714"/>
         </scene>
+        <!--Contrains de altura y anchura-->
+        <scene sceneID="5PJ-aj-Gnx">
+            <objects>
+                <viewController id="EHL-aC-YZB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nlL-rY-zsy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GPn-Py-WTK">
+                                <rect key="frame" x="32" y="120" width="200" height="200"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Iqe-hl-0Z4"/>
+                                    <constraint firstAttribute="height" constant="200" id="w81-pf-02y"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xgw-Mr-ZgL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GPn-Py-WTK" firstAttribute="top" secondItem="xgw-Mr-ZgL" secondAttribute="top" constant="32" id="GcP-CF-Y3N"/>
+                            <constraint firstItem="GPn-Py-WTK" firstAttribute="leading" secondItem="xgw-Mr-ZgL" secondAttribute="leading" constant="32" id="dWV-Sp-wsf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Contrains de altura y anchura" id="e2Q-bf-Bgm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eql-xW-Tcu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="688" y="871"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="syS-6l-Gk0">
             <objects>
@@ -121,6 +158,9 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
