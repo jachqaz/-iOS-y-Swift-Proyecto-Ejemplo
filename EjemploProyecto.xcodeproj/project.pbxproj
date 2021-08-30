@@ -14,6 +14,7 @@
 		A721062526A8D7A10030BA01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A721062426A8D7A10030BA01 /* Assets.xcassets */; };
 		A721062826A8D7A10030BA01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A721062626A8D7A10030BA01 /* LaunchScreen.storyboard */; };
 		A799672826DC8B990026C85C /* ModifyConstraintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A799672726DC8B990026C85C /* ModifyConstraintsViewController.swift */; };
+		A799672A26DC8D030026C85C /* CreateConstrarinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A799672926DC8D030026C85C /* CreateConstrarinsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A721062726A8D7A10030BA01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A721062926A8D7A10030BA01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A799672726DC8B990026C85C /* ModifyConstraintsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyConstraintsViewController.swift; sourceTree = "<group>"; };
+		A799672926DC8D030026C85C /* CreateConstrarinsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateConstrarinsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				A721062626A8D7A10030BA01 /* LaunchScreen.storyboard */,
 				A721062926A8D7A10030BA01 /* Info.plist */,
 				A799672726DC8B990026C85C /* ModifyConstraintsViewController.swift */,
+				A799672926DC8D030026C85C /* CreateConstrarinsViewController.swift */,
 			);
 			path = EjemploProyecto;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 				A721062026A8D7A00030BA01 /* ViewController.swift in Sources */,
 				A721061C26A8D7A00030BA01 /* AppDelegate.swift in Sources */,
 				A721061E26A8D7A00030BA01 /* SceneDelegate.swift in Sources */,
+				A799672A26DC8D030026C85C /* CreateConstrarinsViewController.swift in Sources */,
 				A799672826DC8B990026C85C /* ModifyConstraintsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
